@@ -1,0 +1,231 @@
+:root{
+    --primary-color: #c7726c;
+    --secondary-color: #2f414e;
+    --tertiary-color: #a8a9b9;
+    --bg-color: #b6b9c9;
+    --btn-text-color: #d9dae0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../IMG_1148.WEBP");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 25% left 90%;
+    transition: background-image 2s ease-in-out;
+}
+
+.container{
+    background: linear-gradient(90deg, var(--tertiary-color) 0%, var(--primary-color) 100%);
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3px 0;
+    width: 23%;
+    height: 350px;
+    padding: 10px;
+    border-radius: 1.2em;
+    box-shadow: 0 0 2px 1px var(--primary-color),
+                0 0 3px 2px var(--primary-color),
+                0 0 4px 3px var(--primary-color);
+}
+
+.album-img{
+    position: absolute;
+    top: -90px;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 1.2em;
+    box-shadow: 0 0 2px 1px var(--primary-color),
+                0 0 3px 2px var(--primary-color),
+                0 0 4px 3px var(--primary-color);
+
+}
+
+.album-img img{
+    background-color: var(--primary-color);
+    border-radius: 1.2em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.song-info{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--secondary-color);
+    width: 80%;
+    overflow: hidden;
+}
+
+.song-info h2{
+    margin-top: 10px;
+    padding-top: 25px;
+    transition: all 1s ease;
+    font-size: 1.3em;
+    max-width: 90%;
+    white-space: nowrap;
+}
+
+.song-info h2[data-length = true]{
+    animation: defilement 10s linear infinite;
+}
+
+@keyframes defilement{
+    from {
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-20%);
+    }
+}
+
+.display-controls{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.progress-bar{
+    width: 90%;
+    margin: 10px auto;
+    height: 4px;
+    background-color: var(--secondary-color);
+    position: relative;
+    border-radius: 1em;
+}
+
+
+
+.progress-bar .progress{
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+.tracker{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    color: var(--secondary-color);
+    position: relative;
+    top: -10px;
+}
+
+   
+.controls{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+.controls button, .volume-bar button{
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--btn-text-color);
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.controls button:hover, .volume-bar button:hover{
+    background-color: var(--btn-text-color);
+    color: var(--secondary-color);
+}
+
+#play-pause-btn{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+    
+.volume-bar{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    width: 70%;
+    
+}
+
+#volume-bar{
+    width: 50%;
+    margin: 20px auto;
+    height: 3px;
+    background-color: var(--secondary-color);
+    position: relative;
+    border-radius: 5px;
+}
+
+#volume-bar .volume-level{
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 3px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.volume-circle, .progress-circle{
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    position: relative;
+    left: -3%;
+    top: -3px;
+    cursor: pointer;
+}
+
+/* .volume-circle{
+    left: 0%;
+} */
+
+.progress-circle{
+    top: -7px;
+}
+
+.progress,
+.progress-circle {
+  transition: all 3s;
+}
+
+#play-pause-btn{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
