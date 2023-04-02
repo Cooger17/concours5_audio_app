@@ -1,4 +1,4 @@
-import {songs} from '/songs.js'
+import {songs} from "/js/songs.js"
 
 const body = document.body;
 const audio = document.getElementById("audio");
