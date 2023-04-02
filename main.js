@@ -1,4 +1,4 @@
-import {songs} from 'js/songs.js'
+import {songs} from 'concours5_audio_app/js/songs.js'
 
 const body = document.body;
 const audio = document.getElementById("audio");
