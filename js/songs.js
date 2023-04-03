@@ -43,7 +43,7 @@ export const songs = [
         title: "Imagine",
         artist: "John Lennon",
         audioSrc: "assets/media/imagine.mp3",
-        cover: "assets/cover/imagine.JPG",
+        cover: "assets/cover/Imagine.JPG",
         duration: "03:04"
     }
 ]
