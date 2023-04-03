@@ -11,7 +11,7 @@ export const songs = [
         title: "Billie Jean",
         artist: "Michael Jackson",
         audioSrc: "assets/media/billie-jean.mp3",
-        cover: "assets/cover/billie-jean.jpg",
+        cover: "assets/cover/billie-jean.JPG",
         duration: "04:55"
     },
 
@@ -19,7 +19,7 @@ export const songs = [
         title: "Bohemian Rhapsody",
         artist: "Queen",
         audioSrc: "assets/media/bohemian-rhapsody.mp3",
-        cover: "assets/cover/bohemian-rhapsody.jpg",
+        cover: "assets/cover/bohemian-rhapsody.JPG",
         duration: "05:54"
     },
 
@@ -27,7 +27,7 @@ export const songs = [
         title: "Smells Like Teen Spirit",
         artist: "Nirvana",
         audioSrc: "assets/media/smells-like-teen-spirit.mp3",
-        cover: "assets/cover/smells-like-teen-spirit.jpg",
+        cover: "assets/cover/smells-like-teen-spirit.JPG",
         duration: "05:01"
     },
 
@@ -43,7 +43,7 @@ export const songs = [
         title: "Imagine",
         artist: "John Lennon",
         audioSrc: "assets/media/imagine.mp3",
-        cover: "assets/cover/imagine.jpg",
+        cover: "assets/cover/imagine.JPG",
         duration: "03:04"
     }
 ]
