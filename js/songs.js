@@ -35,7 +35,7 @@ export const songs = [
         title: "I Will Always Love You",
         artist: "Whitney Houston",
         audioSrc: "assets/media/i-will-always-love-you.mp3",
-        cover: "assets/cover/i-will-always-love-you.png",
+        cover: "assets/cover/i-will-always-love-you.PNG",
         duration: "04:03"
     },
 
